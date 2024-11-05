@@ -1,18 +1,18 @@
 #!/bin/bash
 
 # 絶対パスを取得
-SRC_CONFIG="$(pwd)/dotfiles/.config"
-DEST_CONFIG="$HOME/.config"
+SRC_HOME="$(pwd)/dotfiles/HOME"
+DEST_HOME="$HOME"
 
-SRC_LIB="$(pwd)/dotfiles/lib"
-DEST_LIB="/usr/lib"
+SRC_ROOT="$(pwd)/dotfiles/ROOT"
+DEST_ROOT="/"
 
 # ~/.config にリンクを作成
-if [ -d "$SRC_CONFIG" ]; then
-    mkdir -p "$DEST_CONFIG"
-    for file in $(find "$SRC_CONFIG" -type f); do
-        relative_path="${file#$SRC_CONFIG/}"
-        dest_path="$DEST_CONFIG/$relative_path"
+if [ -d "$SRC_HOME" ]; then
+    mkdir -p "$DEST_HOME"
+    for file in $(find "$SRC_HOME" -type f); do
+        relative_path="${file#$SRC_HOME/}"
+        dest_path="$DEST_HOME/$relative_path"
         
         mkdir -p "$(dirname "$dest_path")"
         
@@ -24,14 +24,14 @@ if [ -d "$SRC_CONFIG" ]; then
         fi
     done
 else
-    echo "$SRC_CONFIG が見つかりません。"
+    echo "$SRC_HOME が見つかりません。"
 fi
 
-# /usr/lib にリンクを作成
-if [ -d "$SRC_LIB" ]; then
-    for file in $(find "$SRC_LIB" -type f); do
-        relative_path="${file#$SRC_LIB/}"
-        dest_path="$DEST_LIB/$relative_path"
+# /usr/ROOT にリンクを作成
+if [ -d "$SRC_ROOT" ]; then
+    for file in $(find "$SRC_ROOT" -type f); do
+        relative_path="${file#$SRC_ROOT/}"
+        dest_path="$DEST_ROOT/$relative_path"
         
         sudo mkdir -p "$(dirname "$dest_path")"
         
@@ -43,5 +43,5 @@ if [ -d "$SRC_LIB" ]; then
         fi
     done
 else
-    echo "$SRC_LIB が見つかりません。"
+    echo "$SRC_ROOT が見つかりません。"
 fi

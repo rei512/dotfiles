@@ -1,0 +1,57 @@
+# .nanorc
+
+# 色のカスタマイズ
+# Syntax highlighting を有効化
+include "/usr/share/nano/*.nanorc"
+
+# 行番号を表示
+set linenumbers
+
+# ソフトラップ: 長い行を折り返す
+set softwrap
+
+# ハイライトする色を変更
+set titlecolor cyan,black
+set statuscolor brightwhite,blue
+set selectedcolor black,brightyellow
+set numbercolor green,black
+
+# 行末の空白を強調表示
+#set whitespace " " "	"
+
+# 自動インデントを有効化
+set autoindent
+
+# タブ幅を 4 に設定
+set tabsize 4
+
+# スペースをタブの代わりに使用
+#set tabstospaces
+
+# カーソル位置の表示を有効化
+set positionlog
+
+# スムーズなスクロール
+#set smooth
+
+# 検索時に大文字小文字を区別しない
+set casesensitive off
+
+# カーソルが現在の行の末尾に来た場合、次の行に進まない
+set nowrap
+
+# カーソル位置の保存
+set positionlog
+
+# バックアップファイルの自動生成を無効化
+set backup
+
+# Shift + 矢印キーでテキストの選択を可能にする (端末がサポートしている場合)
+set mouse
+
+# ハイライトカラーの設定
+syntax "default" 
+color green "\<if\>|\<else\>|\<for\>|\<while\>|\<return\>"
+color yellow "\<int\>|\<float\>|\<char\>|\<double\>|\<void\>"
+color brightmagenta "TODO|FIXME|NOTE"
+color brightwhite start="\"" end="\""
