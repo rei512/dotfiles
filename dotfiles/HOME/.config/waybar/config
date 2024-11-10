@@ -24,14 +24,14 @@
     },
     "battery": {
         //"states": {
-        //    // "good": 95,
+        //     "good": 95,
         //    "warning": 30,
         //    "critical": 15
         //},
-        "format": "　{capacity}%"
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        //"format-icons": ["", "", "", "", ""]
+        "format": "　{capacity}%",
+        //"format-good": "", // An empty format will hide the module
+        //"format-full": "",
+        "format-icons": ["", "", "", "", ""]
     },
     "network": {
         // "interface": "wlp2s0", // (Optional) To force the use of this interface
@@ -54,5 +54,10 @@
             "default": ["", ""]
         },
         "on-click": "pavucontrol"
+    },
+    "pulseaudio/slider": {
+        "min": 0,
+        "max": 100,
+        "orientation": "horizontal"
     }
 }
