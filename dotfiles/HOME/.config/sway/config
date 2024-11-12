@@ -173,6 +173,13 @@ input type:touchpad {
     bindsym $mod+minus scratchpad show
 
     bindsym Print exec slurp | grim -g - - | wl-copy
+
+    bindsym XF86AudioRaiseVolume exec pactl -- set-sink-volume 0 +5%
+    bindsym XF86AudioLowerVolume exec pactl -- set-sink-volume 0 -5%
+    bindsym XF86AudioMute exec pactl -- set-sink-mute 0 toggle
+    bindsym XF86AudioMicMute exec pactl -- set-source-mute 1  toggle
+
+    # キーマップ取得方法:wevコマンド
 #
 # Resizing containers:
 #
@@ -223,5 +230,7 @@ exec swayidle -w \
 	timeout 600 'swaymsg "output * dpms off"' \
 		resume 'swaymsg "output * dpms on"' \
 	before-sleep 'swaylock -f -c 000000'
+
+    exec fcitx5
 
 include /etc/sway/config.d/*
