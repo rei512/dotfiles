@@ -2,9 +2,10 @@
   border: none;
   border-radius: 0;
   /*font-family: "Hack", "Noto Color Emoji", sans-serif;*/
-  font-size: 18px;
-  /*font-weight: bold;*/
+  font-size: 15px;
+  font-weight: bold;
   min-height: 0;
+  font-family: " Noto sans CJK JP";
 }
 
 window#waybar {

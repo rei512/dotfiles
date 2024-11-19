@@ -1,6 +1,7 @@
 {
     "layer": "top", // Waybar at top layer
     "modules-left": ["sway/workspaces"],
+    "modules-center": ["sway/window"],
     "modules-right": ["tray", "cpu", "memory", "backlight", "network", "pulseaudio", "battery", "clock"],
     "tray": {
         // "icon-size": 21,
@@ -81,5 +82,13 @@
         "min": 0,
         "max": 100,
         "orientation": "horizontal"
-    }
+    },
+    "sway/window": {
+	"format": "{}",
+    //"icon": true,
+	"rewrite": {
+		"(.*) - Mozilla Firefox": "🌎 $1",
+		"(.*) - zsh": "> [$1]"
+	}
+}
 }
