@@ -226,8 +226,8 @@ bindsym $mod+r mode "resize"
 #     }
 # }
 
-#default_border none
-#default_floating_border none
+default_border none
+default_floating_border none
 font pango:monospace 0.001
 titlebar_padding 1
 titlebar_border_thickness 0
@@ -245,6 +245,9 @@ exec swayidle -w \
     exec blueman-applet
     for_window [app_id="blueman-manager"] floating enable
     for_window [title="Volume Control"] floating enable
+
+    exec discord --start-minimized
+    exec slack
 
 
 include /etc/sway/config.d/*

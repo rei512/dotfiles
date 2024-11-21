@@ -11,6 +11,8 @@ format=<b>%s</b> <span color="#93a1a1">(%a)</span>\n%b
 
 default-timeout=5000
 
+on-notify=exec mpv ~/.config/mako/notification.mp3
+
 # icons
 icon-path=/usr/share/icons/Papirus-Adapta-Nokto-Maia:/usr/share/icons/Papirus-Maia:/usr/share/icons/Papirus
 
