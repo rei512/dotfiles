@@ -173,7 +173,7 @@ input type:touchpad {
     # If there are multiple scratchpad windows, this command cycles through them.
     bindsym $mod+minus scratchpad show
 
-    bindsym Print exec slurp | grim -g - - | wl-copy
+    bindsym Print exec slurp | grim -g - - | wl-copy && exec mpv ~/.config/sway/shot.mp3
 
     bindsym XF86AudioRaiseVolume exec pactl -- set-sink-volume 0 +5%
     bindsym XF86AudioLowerVolume exec pactl -- set-sink-volume 0 -5%
