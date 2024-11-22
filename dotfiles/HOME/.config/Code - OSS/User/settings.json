@@ -1,0 +1,45 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Noto Sans CJK JP', FiraCode Nerd Font Mono",
+    "window.confirmSaveUntitledWorkspace": false,
+
+      // ---------- LaTeX Workshop ----------
+    //"workbench.colorTheme": "Default Dark+",
+
+    // toolsを日本語文書用に設定
+    "latex-workshop.latex.tools": [
+        {  // Latexmk-upLaTeXに変更
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+             "-e",
+             "$latex=q/uplatex %O -synctex=1 -interaction=nonstopmode -file-line-error %S/",
+             "-e",
+             "$bibtex=q/upbibtex %O %B/",
+             "-e",
+             "$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/",
+             "-e",
+             "$makeindex=q/upmendex %O -o %D %S/",
+             "-e",
+             "$dvipdf=q/dvipdfmx %O -o %D %S/",
+             "-norc",
+             "-gg",
+             "-pdfdvi",
+             "%DOC%"
+            ]
+        },
+    ],
+
+    // コンパイル時に生成されたファイルを自動削除
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux", "*.bbl", "*.blg", "*.idx", "*.ind", "*.lof", "*.lot", "*.out", /*"*.toc",*/ "*.acn", "*.acr", "*.alg", 
+        "*.glg", "*.glo", "*.gls", "*.ist", "*.fls", "*.log", "*.fdb_latexmk", /*"*.synctex.gz",*/
+        // for Beamer files
+        "_minted*", "*.nav", "*.snm", "*.vrb",
+    ],
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+
+    // PDFをタブ表示
+    "latex-workshop.view.pdf.viewer": "tab",
+}
