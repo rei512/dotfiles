@@ -29,7 +29,42 @@
              "%DOC%"
             ]
         },
+        {  // platex
+            "name": "ptex2pdf",
+            "command": "ptex2pdf",
+            "args": [
+             "-l",
+             "%DOC%"
+            ]
+        },
     ],
+
+    "latex-workshop.latex.recipes": [
+        {
+          "name": "2 times Build (latexmk *2)",
+          "tools": [
+            "latexmk",
+            "latexmk",
+          ]
+        },
+        {
+          "name": "ptex2pdf",
+          "tools": [
+            "ptex2pdf",
+          ]
+        },
+        {
+          "name": "All Build (ptex2pdf → upbibtex → ptex2pdf *3)",
+          "tools": [
+            "uplatex2pdf",
+            "upbibtex",
+            "uplatex2pdf",
+            "uplatex2pdf",
+            "uplatex2pdf",
+          ]
+        }
+      ],
+    
 
     // コンパイル時に生成されたファイルを自動削除
     "latex-workshop.latex.clean.fileTypes": [
