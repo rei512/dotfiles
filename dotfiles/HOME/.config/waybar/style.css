@@ -57,6 +57,16 @@ window#waybar {
   color: #e5e9f0;
 }
 
+#battery.warning:not(.charging) {
+	background: orange;
+	color: #000000;
+}
+
+#battery.critical:not(.charging) {
+	background: #f53c3c;
+	color: #000000;
+}
+
 @keyframes blink {
   to {
       /*background-color: #ffffff;*/
@@ -64,7 +74,7 @@ window#waybar {
   }
 }
 
-#battery.critical:not(.charging) {
+/*#battery.critical:not(.charging) {
   background: #f53c3c;
   color: #ffffff;
   animation-name: blink;
@@ -72,7 +82,7 @@ window#waybar {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-}
+}*/
 
 #cpu {
   /*background: #2ecc71;*/

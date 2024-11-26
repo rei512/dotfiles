@@ -181,7 +181,8 @@ input type:touchpad {
     bindsym XF86AudioMicMute exec pactl -- set-source-mute 1  toggle
     bindsym XF86MonBrightnessUp exec brightnessctl s +10%
     bindsym XF86MonBrightnessDown exec brightnessctl s 10%-
-
+	
+	bindsym $mod+t exec thunar
     # キーマップ取得方法:wevコマンド
 #
 # Resizing containers:
@@ -245,8 +246,9 @@ exec swayidle -w \
     exec blueman-applet
     for_window [app_id="blueman-manager"] floating enable
     for_window [title="Volume Control"] floating enable
-
-    exec discord --start-minimized
+	for_window [title="Confirm to replace files"] floating enable
+    for_window [title="File Operation Progress"] floating enable
+	exec discord --start-minimized
     exec slack
 
 
