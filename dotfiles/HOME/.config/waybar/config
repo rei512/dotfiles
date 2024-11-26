@@ -84,8 +84,7 @@
 		"tooltip-format": "{ifname}\n{ipaddr}/{cidr}",
 		"tooltip-format-wifi": "{essid} \n{ipaddr}/{cidr}",
 		"tooltip-format-ethernet": "{ifname} \n{ipaddr}/{cidr}",
-		"tooltip-format-disconnected": "Disconnected",
-		"max-length": 50
+		"tooltip-format-disconnected": "Disconnected"
 	},
 	"pulseaudio": {
 		//"scroll-step": 1,
