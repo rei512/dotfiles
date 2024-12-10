@@ -77,4 +77,24 @@
 
     // PDFをタブ表示
     "latex-workshop.view.pdf.viewer": "tab",
+    "explorer.confirmDelete": false,
+    "STM32VSCodeExtension.cubeCLT.path": "/home/user/st/stm32cubeclt_1.17.0",
+    "cmake.pinnedCommands": [
+      "workbench.action.tasks.configureTaskRunner",
+      "workbench.action.tasks.runTask"
+    ],
+    "STM32VSCodeExtension.projectCreator.executablePath": "/opt/stm32cubemx/STM32CubeMX",
+    "STM32VSCodeExtension.productFinder.executablePath": "/home/user/st/STMCUFinder/STMCUFinder",
+    "editor.insertSpaces": false,
+    "github.copilot.enable": {
+      "scminput": true,
+      "markdown": true,
+      "plaintext": true
+    },
+    "cmake.showOptionsMovedNotification": false,
+
+    "markdown.preview.fontFamily": "'Noto Sans CJK JP', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-serif, 'Ricty Diminished'",
+    "markdown-pdf.styles": [
+    "~/.config/Code - OSS/User/markdown-pdf.css"
+    ],
 }

@@ -73,9 +73,9 @@
 	"network": {
 		// "interface": "wlp2s0", // (Optional) To force the use of this interface
 		"format-wifi": "　{signalStrength}%",
-		//"format-ethernet": "{ifname}: {ipaddr}/{cidr} ethernet",
+		//"format-ethernet": "{ifname}: ethernet",
 		"format-disconnected": "⚠",
-		"interface": "wlp4s0",
+		//"interface": "enp62s0u1u1",
 		"format": "{ifname}",
 		//"format-wifi": "{essid} ({signalStrength}%) ",
 		"format-ethernet": "{ifname} ",
