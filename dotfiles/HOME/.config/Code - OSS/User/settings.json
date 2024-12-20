@@ -97,4 +97,7 @@
     "markdown-pdf.styles": [
     "~/.config/Code - OSS/User/markdown-pdf.css"
     ],
+    "[latex]": {
+      "editor.defaultFormatter": "nickfode.latex-formatter"
+    },
 }
