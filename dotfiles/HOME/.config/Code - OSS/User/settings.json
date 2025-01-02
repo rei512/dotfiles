@@ -87,10 +87,16 @@
     "STM32VSCodeExtension.productFinder.executablePath": "/home/user/st/STMCUFinder/STMCUFinder",
     "editor.insertSpaces": false,
     "github.copilot.enable": {
-      "scminput": true,
+      "*": true,
+      "plaintext": true,
       "markdown": true,
-      "plaintext": true
+      "scminput": true
     },
+    "github.copilot.advanced": {
+    
+        
+    },
+    "github.copilot.chat.inlineChatHint.enabled": true,
     "cmake.showOptionsMovedNotification": false,
 
     "markdown.preview.fontFamily": "'Noto Sans CJK JP', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-serif, 'Ricty Diminished'",
@@ -100,4 +106,15 @@
     "[latex]": {
       "editor.defaultFormatter": "nickfode.latex-formatter"
     },
+    "explorer.confirmDragAndDrop": false,
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.customTitleBarVisibility": "auto",
+    "github.gitProtocol": "ssh",
+    "github.copilot.chat.followUps": "always",
+    "github.copilot.chat.inlineChatCompletionTrigger.enabled": true,
+    "editor.inlineCompletionsAccessibilityVerbose": true,
+    "github.copilot.chat.scopeSelection": true,
+    "github.copilot.chat.temporalContext.enabled": true,
 }
