@@ -1,0 +1,76 @@
+.
+├── bootctl
+│   ├── entries
+│   │   └── arch.conf
+│   └── loader.conf
+├── brightness.sh
+├── code_extentions.dmp
+├── dotfiles
+│   ├── HOME
+│   │   ├── .bash_profile
+│   │   ├── .bashrc
+│   │   ├── .bashrc~
+│   │   ├── .config
+│   │   │   ├── alacritty
+│   │   │   │   └── alacritty.toml
+│   │   │   ├── Code
+│   │   │   │   └── User
+│   │   │   │       ├── keybindings.json
+│   │   │   │       ├── markdown-pdf.css
+│   │   │   │       └── settings.json
+│   │   │   ├── Code - OSS
+│   │   │   │   └── User
+│   │   │   │       ├── keybindings.json
+│   │   │   │       ├── markdown-pdf.css
+│   │   │   │       └── settings.json
+│   │   │   ├── discord
+│   │   │   │   └── settings.json
+│   │   │   ├── fish
+│   │   │   │   ├── config.fish
+│   │   │   │   ├── fish_plugins
+│   │   │   │   ├── fish_variables
+│   │   │   │   └── functions
+│   │   │   │       ├── __bobthefish_colors.fish
+│   │   │   │       ├── __bobthefish_display_colors.fish
+│   │   │   │       ├── bobthefish_display_colors.fish
+│   │   │   │       ├── __bobthefish_glyphs.fish
+│   │   │   │       ├── fish_greeting.fish
+│   │   │   │       ├── fish_mode_prompt.fish
+│   │   │   │       ├── fish_prompt.fish
+│   │   │   │       ├── fish_right_prompt.fish
+│   │   │   │       └── fish_title.fish
+│   │   │   ├── mako
+│   │   │   │   ├── config
+│   │   │   │   └── notification.mp3
+│   │   │   ├── nvim
+│   │   │   │   └── init.vim
+│   │   │   ├── sway
+│   │   │   │   ├── config
+│   │   │   │   ├── shot.mp3
+│   │   │   │   └── status.sh
+│   │   │   ├── waybar
+│   │   │   │   ├── config
+│   │   │   │   └── style.css
+│   │   │   └── zathura
+│   │   │       └── zathurarc
+│   │   ├── .gitconfig
+│   │   ├── .nanorc
+│   │   ├── .vimrc
+│   │   └── .vimrc~
+│   └── ROOT
+│       └── lib
+│           └── code
+│               └── product.json
+├── .gitignore
+├── pacman_2025-01-01.dmp
+├── pacman.dmp
+├── README.md
+├── setup_Arch.sh
+├── setup_Arch_yay.sh
+├── setup_Pico_Arch.sh
+├── setup_vscode_extensions.sh
+├── tree.dmp
+├── vscode-extensions.dmp
+└── yay.dmp
+
+22 directories, 52 files

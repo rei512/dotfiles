@@ -117,4 +117,5 @@
     "editor.inlineCompletionsAccessibilityVerbose": true,
     "github.copilot.chat.scopeSelection": true,
     "github.copilot.chat.temporalContext.enabled": true,
+    "glassit.alpha": 220,
 }
