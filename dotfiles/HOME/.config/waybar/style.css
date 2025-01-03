@@ -36,7 +36,7 @@ window#waybar {
   border-bottom: 3px solid #ffffff;
 }
 
-#clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor {
+#custom, #clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor {
   padding: 0 10px;
   margin: 0 5px;
 }
@@ -48,6 +48,11 @@ window#waybar {
 }
 
 #battery {
+  /*background-color: #000000;*/
+  color: #e5e9f0;
+}
+
+#custom {
   /*background-color: #000000;*/
   color: #e5e9f0;
 }
