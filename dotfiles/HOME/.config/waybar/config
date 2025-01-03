@@ -52,7 +52,7 @@
 		"format": "　{usage}%"
 	},
 	"memory": {
-		"format": "　{}%",
+		"format": "　{}%",
 		"tooltip-format": "{used}/{total} GiB\nswap {swapUsed}/{swapAvail} GiB"
 	},
 	"backlight": {

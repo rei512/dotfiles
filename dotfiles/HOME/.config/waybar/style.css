@@ -5,7 +5,7 @@
   font-size: 15px;
   font-weight: bold;
   min-height: 0;
-  font-family: " Noto sans CJK JP";
+  font-family: "Nerd Font Mono", "Noto sans CJK JP";
 }
 
 window#waybar {
