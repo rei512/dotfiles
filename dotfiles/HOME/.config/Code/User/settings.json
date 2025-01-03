@@ -1,0 +1,120 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Noto Sans CJK JP', FiraCode Nerd Font Mono",
+    "window.confirmSaveUntitledWorkspace": false,
+
+      // ---------- LaTeX Workshop ----------
+    //"workbench.colorTheme": "Default Dark+",
+
+    // toolsを日本語文書用に設定
+    "latex-workshop.latex.tools": [
+        {  // Latexmk-upLaTeXに変更
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+             "-e",
+             "$latex=q/uplatex %O -synctex=1 -interaction=nonstopmode -file-line-error %S/",
+             "-e",
+             "$bibtex=q/upbibtex %O %B/",
+             "-e",
+             "$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/",
+             "-e",
+             "$makeindex=q/upmendex %O -o %D %S/",
+             "-e",
+             "$dvipdf=q/dvipdfmx %O -o %D %S/",
+             "-norc",
+             "-gg",
+             "-pdfdvi",
+             "%DOC%"
+            ]
+        },
+        {  // platex
+            "name": "ptex2pdf",
+            "command": "ptex2pdf",
+            "args": [
+             "-l",
+             "%DOC%"
+            ]
+        },
+    ],
+
+    "latex-workshop.latex.recipes": [
+        {
+          "name": "2 times Build (latexmk *2)",
+          "tools": [
+            "latexmk",
+            "latexmk",
+          ]
+        },
+        {
+          "name": "ptex2pdf",
+          "tools": [
+            "ptex2pdf",
+          ]
+        },
+        {
+          "name": "All Build (ptex2pdf → upbibtex → ptex2pdf *3)",
+          "tools": [
+            "uplatex2pdf",
+            "upbibtex",
+            "uplatex2pdf",
+            "uplatex2pdf",
+            "uplatex2pdf",
+          ]
+        }
+      ],
+    
+
+    // コンパイル時に生成されたファイルを自動削除
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux", "*.bbl", "*.blg", "*.idx", "*.ind", "*.lof", "*.lot", "*.out", /*"*.toc",*/ "*.acn", "*.acr", "*.alg", 
+        "*.glg", "*.glo", "*.gls", "*.ist", "*.fls", "*.log", "*.fdb_latexmk", /*"*.synctex.gz",*/
+        // for Beamer files
+        "_minted*", "*.nav", "*.snm", "*.vrb",
+    ],
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+
+    // PDFをタブ表示
+    "latex-workshop.view.pdf.viewer": "tab",
+    "explorer.confirmDelete": false,
+    "STM32VSCodeExtension.cubeCLT.path": "/home/user/st/stm32cubeclt_1.17.0",
+    "cmake.pinnedCommands": [
+      "workbench.action.tasks.configureTaskRunner",
+      "workbench.action.tasks.runTask"
+    ],
+    "STM32VSCodeExtension.projectCreator.executablePath": "/opt/stm32cubemx/STM32CubeMX",
+    "STM32VSCodeExtension.productFinder.executablePath": "/home/user/st/STMCUFinder/STMCUFinder",
+    "editor.insertSpaces": false,
+    "github.copilot.enable": {
+      "*": true,
+      "plaintext": true,
+      "markdown": true,
+      "scminput": true
+    },
+    "github.copilot.advanced": {
+    
+        
+    },
+    "github.copilot.chat.inlineChatHint.enabled": true,
+    "cmake.showOptionsMovedNotification": false,
+
+    "markdown.preview.fontFamily": "'Noto Sans CJK JP', BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-serif, 'Ricty Diminished'",
+    "markdown-pdf.styles": [
+    "~/.config/Code - OSS/User/markdown-pdf.css"
+    ],
+    "[latex]": {
+      "editor.defaultFormatter": "nickfode.latex-formatter"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.customTitleBarVisibility": "auto",
+    "github.gitProtocol": "ssh",
+    "github.copilot.chat.followUps": "always",
+    "github.copilot.chat.inlineChatCompletionTrigger.enabled": true,
+    "editor.inlineCompletionsAccessibilityVerbose": true,
+    "github.copilot.chat.scopeSelection": true,
+    "github.copilot.chat.temporalContext.enabled": true,
+}
