@@ -1,7 +1,8 @@
 {
 	"layer": "top", // Waybar at top layer
 	"modules-left": [
-		"sway/workspaces"
+		"sway/workspaces",
+		"custom/spotify"
 	],
 	"modules-center": [
 		"sway/window"
@@ -100,7 +101,7 @@
 		//"interface": "enp62s0u1u1",
 		"format": "{ifname}",
 		//"format-wifi": "{essid} ({signalStrength}%) ",
-		"format-ethernet": "{ifname} ",
+		"format-ethernet": "󰈀　Ethernet",
 		//"format-disconnected": "", //An empty format will hide the module.
 		//"format-disconnected": "",
 		"tooltip-format": "{ifname}\n{ipaddr}/{cidr}",
@@ -151,7 +152,7 @@
 		"exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300"
 	},
 	"custom/checkupdates": {
-		"format": "󰮯　{}",
+		"format": "　󰮯　{}",
 		"tooltip": true,
 		"exec": "~/.config/waybar/checkupdates.sh",
 		"interval": 3600,
@@ -165,5 +166,12 @@
 		"exec-if": "exit 0", // always run; consider advanced run conditions
 		"on-click": "exec checkupdates", // update system
 		"signal": 8
+	},
+	"custom/spotify": {
+		"format": "　{}",
+		"interval": 30, // Remove this if your script is endless and write in loop
+		"exec": "~/.config/waybar/mediaplayer.sh 2> /dev/null", // Script in resources folder
+		"exec-if": "pgrep spotify",
+		"return-type": "json"
 	}
 }

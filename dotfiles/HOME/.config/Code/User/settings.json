@@ -91,12 +91,12 @@
 	// PDFをタブ表示
 	"latex-workshop.view.pdf.viewer": "tab",
 	"explorer.confirmDelete": false,
-	"STM32VSCodeExtension.cubeCLT.path": "/home/user/st/stm32cubeclt_1.17.0",
+	"STM32VSCodeExtension.cubeCLT.path": "/opt/stm32cubeclt",
 	"cmake.pinnedCommands": [
 		"workbench.action.tasks.configureTaskRunner",
 		"workbench.action.tasks.runTask"
 	],
-	"STM32VSCodeExtension.projectCreator.executablePath": "/opt/stm32cubemx/STM32CubeMX",
+	"STM32VSCodeExtension.projectCreator.executablePath": "/home/user/st/STM32CubeMX/STM32CubeMX",
 	"STM32VSCodeExtension.productFinder.executablePath": "/home/user/st/STMCUFinder/STMCUFinder",
 	"editor.insertSpaces": false,
 	"github.copilot.enable": {
@@ -129,5 +129,10 @@
 	"glassit.alpha": 220,
 	"[json]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
-	}
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"raspberry-pi-pico.python3Path": "/usr/bin/python",
+	"debug.allowBreakpointsEverywhere": true
 }

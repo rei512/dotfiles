@@ -250,6 +250,7 @@ exec swayidle -w \
     for_window [title="File Operation Progress"] floating enable
     for_window [title="New Project from a MCU/MPU"] floating enable
     for_window [title="STM32CubeMX Untitled"] floating enable
+	for_window [title="galculator"] floating enable
 	exec discord --start-minimized
     exec slack
 
