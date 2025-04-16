@@ -3,8 +3,11 @@ christian-kohler.path-intellisense
 dan-c-underwood.arm
 donjayamanne.githistory
 eamodio.gitlens
+eriklynd.json-tools
 esbenp.prettier-vscode
+espressif.esp-idf-extension
 formulahendry.code-runner
+foxundermoon.shell-format
 github.codespaces
 github.copilot
 github.copilot-chat
@@ -22,6 +25,7 @@ ms-ceintl.vscode-language-pack-ja
 ms-python.debugpy
 ms-python.python
 ms-python.vscode-pylance
+ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-ssh
 ms-vscode-remote.remote-ssh-edit
 ms-vscode.cmake-tools
@@ -37,11 +41,13 @@ paulober.pico-w-go
 pkief.material-icon-theme
 platformio.platformio-ide
 raspberry-pi.raspberry-pi-pico
+rust-lang.rust-analyzer
 s-nlf-fh.glassit
 shardulm94.trailing-spaces
 shd101wyy.markdown-preview-enhanced
 stmicroelectronics.stm32-vscode-extension
 streetsidesoftware.code-spell-checker
+svelte.svelte-vscode
 trond-snekvik.gnu-mapfiles
 twxs.cmake
 visualstudioexptteam.intellicode-api-usage-examples
