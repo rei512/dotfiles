@@ -31,13 +31,10 @@
 	// PDFをタブ表示
 	"latex-workshop.view.pdf.viewer": "tab",
 	"explorer.confirmDelete": false,
-	"STM32VSCodeExtension.cubeCLT.path": "/opt/stm32cubeclt",
 	"cmake.pinnedCommands": [
 		"workbench.action.tasks.configureTaskRunner",
 		"workbench.action.tasks.runTask"
 	],
-	"STM32VSCodeExtension.projectCreator.executablePath": "/home/user/st/STM32CubeMX/STM32CubeMX",
-	"STM32VSCodeExtension.productFinder.executablePath": "/home/user/st/STMCUFinder/STMCUFinder",
 	"editor.insertSpaces": false,
 	"github.copilot.enable": {
 		"*": true,
@@ -84,5 +81,9 @@
 	"git.openRepositoryInParentFolders": "always",
 	"editor.wordWrap": "on",
 	"chat.editing.alwaysSaveWithGeneratedChanges": true,
-	"editor.minimap.showSlider": "always"
+	"editor.minimap.showSlider": "always",
+	"terminal.integrated.defaultProfile.linux": "fish",
+	"platformio-ide.useBuiltinPIOCore": false,
+	"platformio-ide.useBuiltinPython": false,
+	"chat.unifiedAgentsBar.enabled": true
 }
